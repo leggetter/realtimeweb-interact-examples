@@ -25,11 +25,13 @@ namespace RealTimeWebMatters.Controllers
             var applicationKey = ConfigurationManager.AppSettings.Get("pusher-app-key");
             var applicationSecret = ConfigurationManager.AppSettings.Get("pusher-app-secret");
             var provider = new PusherProvider(applicationId, applicationKey, applicationSecret);
-            var request = new ObjectPusherRequest("salesy-why_the_realtimeweb_matters", "new_question", new
+            var request = new ObjectPusherRequest("questions-why_the_realtimeweb_matters", "new_question", new
             {
                 asker = asker,
                 question = question
             });
+
+            provider.Trigger(request);
 
             TempData["Message"] = "Thanks for your question, " + asker;
 
