@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    @{
+        object temp = TempData["Message"];
+        string message = null;
+        if(temp != null)
+        {
+            message = temp as string;
+        }
+    }
+
+    @if (string.IsNullOrWhiteSpace(message) == false) { 
+        <div class="message">@message</div>
+    }
+
+    @RenderBody()
+
+    <ul class="menu">
+        <li><a href="TooSalesy/">Too Salesy!</a></li>
+        <li><a href="Question/">I have a question</a></li>
+    </ul>
+</body>
+</html>

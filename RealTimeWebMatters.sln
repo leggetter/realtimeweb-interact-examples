@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealTimeWebMatters", "RealTimeWebMatters\RealTimeWebMatters.csproj", "{30FB9870-ADE3-488A-B4A6-664FD831F83B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A310667-D739-4841-B71D-918C71F99895}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30FB9870-ADE3-488A-B4A6-664FD831F83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FB9870-ADE3-488A-B4A6-664FD831F83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FB9870-ADE3-488A-B4A6-664FD831F83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FB9870-ADE3-488A-B4A6-664FD831F83B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

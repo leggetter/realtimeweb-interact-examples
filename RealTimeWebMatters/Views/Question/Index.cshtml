@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Ask a Question";
+}
+
+<h2>Ask a Question</h2>
+
+<form id="question_form" method"post" action="/Question/Ask">
+    <label for="asker">Name: </label><br />
+    <input type="text" id="asker" name="asker" value="Anon" /><br /><br />
+    <label for="question">Question: </label><br />
+    <textarea id="question" name="question"></textarea><br />
+    <button>Ask</button>
+</form>
